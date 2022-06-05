@@ -1,0 +1,68 @@
+
+2022-06-05 21:11:59.380341
+user id is 2
+{'status': 'error', 'message': 'please check in first'}
+
+2022-06-05 21:12:08.856450
+user id is 2
+{'status': 'success', 'message': ''}
+
+2022-06-05 21:12:22.857736
+user id is 2
+{'status': 'success', 'message': ''}
+
+2022-06-05 21:12:28.985869
+user id is 2
+{'status': 'success', 'message': ''}
+
+2022-06-05 21:12:41.292580
+user id is 2
+{'status': 'success', 'message': ''}
+
+2022-06-05 21:14:42.740123
+user id is 2
+{'status': 'success', 'message': ''}
+
+2022-06-05 21:14:56.506675
+user id is 2
+{'status': 'success', 'message': ''}
+
+2022-06-05 21:15:08.473947
+user id is 2
+{'status': 'success', 'message': ''}
+
+2022-06-05 21:15:23.922265
+user id is 2
+{'status': 'success', 'message': ''}
+
+2022-06-05 21:16:13.711061
+user id is 2
+{'status': 'success', 'message': ''}
+
+2022-06-05 21:16:24.936780
+user id is 2
+{'status': 'success', 'message': ''}
+
+2022-06-05 21:16:30.935052
+user id is 2
+{'status': 'success', 'message': ''}
+
+2022-06-05 21:16:37.461355
+user id is 2
+{'status': 'success', 'message': ''}
+
+2022-06-05 21:16:45.971054
+user id is 2
+{'status': 'success', 'message': ''}
+
+2022-06-05 21:16:55.692785
+user id is 2
+{'status': 'success', 'message': ''}
+
+2022-06-05 21:17:11.021825
+user id is 2
+{'fld_attendance_status': [ErrorDetail(string='please provide valid fld_attendance_status', code='invalid')]}
+
+2022-06-05 21:17:20.478801
+user id is 2
+{'status': 'success', 'message': ''}

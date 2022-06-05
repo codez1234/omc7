@@ -1,0 +1,12 @@
+
+2022-06-05 21:20:25.387662
+user id is 2
+{'status': 'success', 'message': [OrderedDict([('claim_id', None), ('visit_id', 'OMCVISIT_2022-06-04_2'), ('distance', 6539.437312267078), ('amount', None), ('status', 'pending'), ('date', '2022-06-04'), ('created_datetime', None)]), OrderedDict([('claim_id', None), ('visit_id', 'OMCVISIT_2022-06-05_2'), ('distance', 11516.66208149838), ('amount', None), ('status', 'pending'), ('date', '2022-06-05'), ('created_datetime', None)])]}
+
+2022-06-05 21:34:22.594062
+user id is 2
+{'status': 'success', 'message': [OrderedDict([('claim_id', None), ('visit_id', 'OMCVISIT_2022-06-04_2'), ('distance', 6539.437312267078), ('amount', None), ('status', 'requested'), ('date', '2022-06-04'), ('created_datetime', None)]), OrderedDict([('claim_id', None), ('visit_id', 'OMCVISIT_2022-06-05_2'), ('distance', 11516.66208149838), ('amount', None), ('status', 'pending'), ('date', '2022-06-05'), ('created_datetime', None)])]}
+
+2022-06-05 21:34:57.144396
+user id is 2
+{'status': 'success', 'message': [OrderedDict([('claim_id', None), ('visit_id', 'OMCVISIT_2022-06-04_2'), ('distance', 6539.437312267078), ('amount', None), ('status', 'requested'), ('date', '2022-06-04'), ('created_datetime', None)]), OrderedDict([('claim_id', None), ('visit_id', 'OMCVISIT_2022-06-05_2'), ('distance', 11516.66208149838), ('amount', None), ('status', 'pending'), ('date', '2022-06-05'), ('created_datetime', None)])]}

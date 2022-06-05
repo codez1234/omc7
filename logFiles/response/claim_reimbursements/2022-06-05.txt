@@ -1,0 +1,12 @@
+
+2022-06-05 21:31:33.272051
+user id is 2
+{'status': 'success', 'message': 'requested'}
+
+2022-06-05 21:31:41.335888
+user id is 2
+{'status': 'success', 'message': 'Already requested'}
+
+2022-06-05 21:31:42.470189
+user id is 2
+{'status': 'success', 'message': 'Already requested'}

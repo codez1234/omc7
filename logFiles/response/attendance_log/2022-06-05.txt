@@ -1,0 +1,40 @@
+
+2022-06-05 21:20:54.110870
+user id is 2
+{'status': 'success', 'message': 'user data', 'visit_id': 'OMCVISIT_2022-06-1_2', 'data': []}
+
+2022-06-05 21:22:12.909543
+user id is 2
+{'status': 'success', 'message': 'user data', 'visit_id': 'OMCVISIT_2022-06-1_2', 'data': []}
+
+2022-06-05 21:23:59.363892
+user id is 2
+{'status': 'success', 'message': 'user data', 'visit_id': 'OMCVISIT_2022-06-05_2', 'data': [OrderedDict([('visit_id', 'OMCVISIT_2022-06-05_2'), ('start_latitude', 50.0), ('start_longitude', 50.0), ('end_latitude', 50.0), ('end_longitude', 50.0), ('start_time', '01:20:00'), ('end_time', '03:50:00'), ('date', '2022-06-05'), ('site_id', 1)]), OrderedDict([('visit_id', 'OMCVISIT_2022-06-05_2'), ('start_latitude', 10.0), ('start_longitude', 10.0), ('end_latitude', 10.0), ('end_longitude', 10.0), ('start_time', '01:50:00'), ('end_time', '02:50:00'), ('date', '2022-06-05'), ('site_id', 3)])]}
+
+2022-06-05 21:24:25.148838
+user id is 2
+{'status': 'success', 'message': 'user data', 'visit_id': 'OMCVISIT_None_2', 'data': []}
+
+2022-06-05 21:25:16.298689
+user id is 2
+{'status': 'success', 'message': 'user data', 'visit_id': 'OMCVISIT_None_2', 'data': []}
+
+2022-06-05 21:26:11.966160
+user id is 2
+{'status': 'success', 'message': 'user data', 'visit_id': 'OMCVISIT_None_2', 'data': []}
+
+2022-06-05 21:27:03.273005
+user id is 2
+{'status': 'success', 'message': 'user data', 'visit_id': 'OMCVISIT_2022-06-05_2', 'data': [OrderedDict([('visit_id', 'OMCVISIT_2022-06-05_2'), ('start_latitude', 50.0), ('start_longitude', 50.0), ('end_latitude', 50.0), ('end_longitude', 50.0), ('start_time', '01:20:00'), ('end_time', '03:50:00'), ('date', '2022-06-05'), ('site_id', 1)]), OrderedDict([('visit_id', 'OMCVISIT_2022-06-05_2'), ('start_latitude', 10.0), ('start_longitude', 10.0), ('end_latitude', 10.0), ('end_longitude', 10.0), ('start_time', '01:50:00'), ('end_time', '02:50:00'), ('date', '2022-06-05'), ('site_id', 3)])]}
+
+2022-06-05 21:27:56.829480
+user id is 2
+{'status': 'success', 'message': 'user data', 'visit_id': 'OMCVISIT_2022-06-04_2', 'data': [OrderedDict([('visit_id', 'OMCVISIT_2022-06-04_2'), ('start_latitude', 10.0), ('start_longitude', 10.0), ('end_latitude', 10.0), ('end_longitude', 10.0), ('start_time', '02:20:00'), ('end_time', '02:20:00'), ('date', '2022-06-04'), ('site_id', 3)]), OrderedDict([('visit_id', 'OMCVISIT_2022-06-04_2'), ('start_latitude', 50.0), ('start_longitude', 50.0), ('end_latitude', 50.0), ('end_longitude', 50.0), ('start_time', '03:20:00'), ('end_time', '04:20:00'), ('date', '2022-06-04'), ('site_id', 1)])]}
+
+2022-06-05 21:34:29.140339
+user id is 2
+{'status': 'success', 'message': 'user data', 'visit_id': 'OMCVISIT_2022-06-04_2', 'data': [OrderedDict([('visit_id', 'OMCVISIT_2022-06-04_2'), ('start_latitude', 10.0), ('start_longitude', 10.0), ('end_latitude', 10.0), ('end_longitude', 10.0), ('start_time', '02:20:00'), ('end_time', '02:20:00'), ('date', '2022-06-04'), ('site_id', 3)]), OrderedDict([('visit_id', 'OMCVISIT_2022-06-04_2'), ('start_latitude', 50.0), ('start_longitude', 50.0), ('end_latitude', 50.0), ('end_longitude', 50.0), ('start_time', '03:20:00'), ('end_time', '04:20:00'), ('date', '2022-06-04'), ('site_id', 1)])]}
+
+2022-06-05 21:34:44.831103
+user id is 2
+{'status': 'success', 'message': 'user data', 'visit_id': 'OMCVISIT_2022-06-05_2', 'data': [OrderedDict([('visit_id', 'OMCVISIT_2022-06-05_2'), ('start_latitude', 50.0), ('start_longitude', 50.0), ('end_latitude', 50.0), ('end_longitude', 50.0), ('start_time', '01:20:00'), ('end_time', '03:50:00'), ('date', '2022-06-05'), ('site_id', 1)]), OrderedDict([('visit_id', 'OMCVISIT_2022-06-05_2'), ('start_latitude', 10.0), ('start_longitude', 10.0), ('end_latitude', 10.0), ('end_longitude', 10.0), ('start_time', '01:50:00'), ('end_time', '02:50:00'), ('date', '2022-06-05'), ('site_id', 3)])]}
