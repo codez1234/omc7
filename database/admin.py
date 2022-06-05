@@ -103,11 +103,33 @@ class TblUserReimbursementsAdmin(admin.ModelAdmin):
                      "visit_id", "status", "user_id__id"]
 
 
+class TblRatesAdmin(admin.ModelAdmin):
+    list_display = ["fld_ai_id", "fld_state", "fld_rate"]
+    search_fields = ["fld_ai_id", "fld_state", "fld_rate"]
+
+
+class TblSitesAdmin(admin.ModelAdmin):
+    list_display = ["id", "site_omc_id", "site_type",
+                    "site_name", "state", "district", "latitude", "longitude"]
+    search_fields = ["id", "site_omc_id",
+                     "site_type", "site_name", "state", "district"]
+
+
+class TblUserSitesAdmin(admin.ModelAdmin):
+    list_display = ["id", "user_id", "assigned_date"]
+    search_fields = ["id", "user_id__email"]
+
+
+# class Admin(admin.ModelAdmin):
+#     list_display = []
+#     search_fields = []
+
+
 admin.site.register(TblUserReimbursements, TblUserReimbursementsAdmin)
 admin.site.register(TblAttendanceLog, TblAttendanceLogAdmin)
 admin.site.register(TblAttendance, TblAttendanceAdmin)
-admin.site.register(TblRates)
-admin.site.register(TblSites)
+admin.site.register(TblRates, TblRatesAdmin)
+admin.site.register(TblSites, TblSitesAdmin)
 admin.site.register(TblUserDevices)
 admin.site.register(TblUserLevel)
-admin.site.register(TblUserSites)
+admin.site.register(TblUserSites, TblUserSitesAdmin)
