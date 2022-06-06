@@ -165,6 +165,7 @@ class UserSitesView(APIView):
         return Response({"status": "success", 'message': "user sites", "data": serializer.data}, status=status.HTTP_200_OK)
 
 
+'''
 class AttendanceLogView(APIView):
     renderer_classes = [UserRenderer]
     permission_classes = [IsAuthenticated]
@@ -193,6 +194,65 @@ class AttendanceLogView(APIView):
                            "status": "success", 'message': "user data", "data": {'visit_id': visit_id, "attendancelog": serializer.data}})
         return Response({
             "status": "success", 'message': "user data", "data": {'visit_id': visit_id, "attendancelog": serializer.data}}, status=status.HTTP_200_OK)
+
+'''
+
+
+class AttendanceLogView(APIView):
+    renderer_classes = [UserRenderer]
+    permission_classes = [IsAuthenticated]
+
+    def post(self, request, format=None):
+        dir = "attendance_log"
+        request_text_file(dir=dir, user=request.user.id, value=request.data)
+        # "visit_id": "OMCVISIT_2022-06-01_2"
+        user = request.user
+        if request.data:
+            date = request.data.get("date")
+        else:
+            date = date_now()
+            # print(f'date = {date_now()}')
+        visit_id = f'OMCVISIT_{date}_{user.id}'
+        # print(f'visit_id == {visit_id}')
+        # try:
+        #     obj = TblAttendanceLog.objects.get(
+        #         user_id=request.user, date=date_now())
+        # except:
+        #     obj = None
+        obj = TblAttendanceLog.objects.filter(
+            user_id=user, date=date)
+        serializer = TblAttendanceLogSerializer(obj, many=True)
+
+        serializer_date = []
+        # print(serializer.data)
+        for i in serializer.data:
+            dict_data = {
+                "site_omc_id": i.get("site_id")["site_omc_id"],
+                "site_type": i.get("site_id")["site_type"],
+                "site_name": i.get("site_id")["site_name"],
+                "visit_id": i.get("visit_id"),
+                "start_latitude": i.get("start_latitude"),
+                "start_longitude": i.get("start_longitude"),
+                "end_latitude": i.get("end_latitude"),
+                "end_longitude": i.get("end_longitude"),
+                "start_time": i.get("start_time"),
+                "end_time": i.get("end_time"),
+                "date": i.get("date")
+            }
+            serializer_date.append(dict_data)
+            # print(i)
+
+        # print(serializer_date)
+
+        # response_text_file(dir=dir, user=request.user.id, value={
+        #                    "status": "success", 'message': "user data", "data": {'visit_id': visit_id, "attendancelog": serializer.data}})
+        # return Response({
+        #     "status": "success", 'message': "user data", "data": {'visit_id': visit_id, "attendancelog": serializer.data}}, status=status.HTTP_200_OK)
+
+        response_text_file(dir=dir, user=request.user.id, value={
+                           "status": "success", 'message': "user data", "data": {'visit_id': visit_id, "attendancelog": serializer_date}})
+        return Response({
+            "status": "success", 'message': "user data", "data": {'visit_id': visit_id, "attendancelog": serializer_date}}, status=status.HTTP_200_OK)
 
 
 class UserTblAttendanceView(APIView):

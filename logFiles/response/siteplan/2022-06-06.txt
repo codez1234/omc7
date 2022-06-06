@@ -6,3 +6,7 @@ user id is 2
 2022-06-06 13:08:46.873354
 user id is 2
 {'status': 'success', 'message': 'user sites', 'data': [OrderedDict([('sites', [OrderedDict([('site_omc_id', 'omc-dbg'), ('site_type', 'AB-10'), ('site_name', 'jesses and mary academy'), ('state', 'bihar'), ('district', 'darbhanga'), ('latitude', '50'), ('longitude', '50')]), OrderedDict([('site_omc_id', 'omc-train'), ('site_type', 'AB-10'), ('site_name', 'station'), ('state', 'bihar'), ('district', 'darbhanga'), ('latitude', '10'), ('longitude', '10')])]), ('assigned_date', '2022-06-06')])]}
+
+2022-06-06 22:22:33.095599
+user id is 2
+{'status': 'success', 'message': 'user sites', 'data': [OrderedDict([('sites', [OrderedDict([('site_omc_id', 'omc-dbg'), ('site_type', 'AB-10'), ('site_name', 'jesses and mary academy'), ('state', 'bihar'), ('district', 'darbhanga'), ('latitude', '50'), ('longitude', '50')]), OrderedDict([('site_omc_id', 'omc-train'), ('site_type', 'AB-10'), ('site_name', 'station'), ('state', 'bihar'), ('district', 'darbhanga'), ('latitude', '10'), ('longitude', '10')])]), ('assigned_date', '2022-06-06')])]}
