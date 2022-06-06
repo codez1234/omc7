@@ -190,8 +190,9 @@ class AttendanceLogView(APIView):
             user_id=user, date=date)
         serializer = TblAttendanceLogSerializer(obj, many=True)
         response_text_file(dir=dir, user=request.user.id, value={
-                           "status": "success", 'message': "user data", 'visit_id': visit_id, "data": serializer.data})
-        return Response({"status": "success", 'message': "user data", 'visit_id': visit_id, "data": serializer.data}, status=status.HTTP_200_OK)
+                           "status": "success", 'message': "user data", "data": {'visit_id': visit_id, "attendancelog": serializer.data}})
+        return Response({
+            "status": "success", 'message': "user data", "data": {'visit_id': visit_id, "attendancelog": serializer.data}}, status=status.HTTP_200_OK)
 
 
 class UserTblAttendanceView(APIView):

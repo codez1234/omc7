@@ -1,3 +1,4 @@
+from dataclasses import fields
 from wsgiref import validate
 from wsgiref.validate import validator
 from rest_framework import serializers
@@ -117,9 +118,18 @@ class UserReimbursementsSerializer(serializers.ModelSerializer):
         exclude = ("id", 'user_id', "is_active", "is_delete")
 
 
+class TblSitesSerializer2(serializers.ModelSerializer):
+    class Meta:
+        model = TblSites
+        fields = ('site_omc_id', 'site_type', 'site_name')
+
+
 class TblAttendanceLogSerializer(serializers.ModelSerializer):
+    site_id = TblSitesSerializer2(read_only=True)
+
     class Meta:
         model = TblAttendanceLog
         # fields = "__all__"
+        # fields = ("site_id", "visit_id")
         exclude = ("id", 'user_id', "is_active",
                    "is_delete", "created_datetime")

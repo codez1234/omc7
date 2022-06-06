@@ -129,6 +129,8 @@ class TblSites(models.Model):
 
     def __str__(self) -> str:
         return self.site_name
+    # def __unicode__(self):
+    #     return '%s' % (self.site_omc_id)
 
     class Meta:
         managed = True
