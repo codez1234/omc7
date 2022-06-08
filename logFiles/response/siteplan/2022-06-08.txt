@@ -1,0 +1,16 @@
+
+2022-06-08 12:00:38.289722
+user id is 2
+{'status': 'success', 'message': 'user sites', 'data': []}
+
+2022-06-08 12:01:34.685486
+user id is 2
+{'status': 'success', 'message': 'user sites', 'data': [OrderedDict([('sites', [OrderedDict([('site_omc_id', 'omc-dbg'), ('site_type', 'AB-10'), ('site_name', 'jesses and mary academy'), ('state', 'bihar'), ('district', 'darbhanga'), ('latitude', '50'), ('longitude', '50')]), OrderedDict([('site_omc_id', 'omc-tower'), ('site_type', 'AB-10'), ('site_name', 'darbhanga tower'), ('state', 'bihar'), ('district', 'darbhanga'), ('latitude', '20'), ('longitude', '20')]), OrderedDict([('site_omc_id', 'omc-train'), ('site_type', 'AB-10'), ('site_name', 'station'), ('state', 'bihar'), ('district', 'darbhanga'), ('latitude', '10'), ('longitude', '10')])]), ('assigned_date', '2022-06-08')])]}
+
+2022-06-08 12:02:31.872993
+user id is 2
+{'status': 'success', 'message': 'user sites', 'data': OrderedDict([('sites', [OrderedDict([('site_omc_id', 'omc-dbg'), ('site_type', 'AB-10'), ('site_name', 'jesses and mary academy'), ('state', 'bihar'), ('district', 'darbhanga'), ('latitude', '50'), ('longitude', '50')]), OrderedDict([('site_omc_id', 'omc-tower'), ('site_type', 'AB-10'), ('site_name', 'darbhanga tower'), ('state', 'bihar'), ('district', 'darbhanga'), ('latitude', '20'), ('longitude', '20')]), OrderedDict([('site_omc_id', 'omc-train'), ('site_type', 'AB-10'), ('site_name', 'station'), ('state', 'bihar'), ('district', 'darbhanga'), ('latitude', '10'), ('longitude', '10')])]), ('assigned_date', '2022-06-08')])}
+
+2022-06-08 12:44:09.501115
+user id is 2
+{'status': 'success', 'message': 'user sites', 'data': OrderedDict([('sites', [OrderedDict([('site_omc_id', 'omc-dbg'), ('site_type', 'AB-10'), ('site_name', 'jesses and mary academy'), ('state', 'bihar'), ('district', 'darbhanga'), ('latitude', '50'), ('longitude', '50')]), OrderedDict([('site_omc_id', 'omc-tower'), ('site_type', 'AB-10'), ('site_name', 'darbhanga tower'), ('state', 'bihar'), ('district', 'darbhanga'), ('latitude', '20'), ('longitude', '20')]), OrderedDict([('site_omc_id', 'omc-train'), ('site_type', 'AB-10'), ('site_name', 'station'), ('state', 'bihar'), ('district', 'darbhanga'), ('latitude', '10'), ('longitude', '10')])]), ('assigned_date', '2022-06-08')])}

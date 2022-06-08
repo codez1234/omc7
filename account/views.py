@@ -161,8 +161,8 @@ class UserSitesView(APIView):
         serializer = TblUserSitesSerializer(sites, many=True)
 
         response_text_file(dir=dir, user=id, value={
-                           "status": "success", 'message': "user sites", "data": serializer.data})
-        return Response({"status": "success", 'message': "user sites", "data": serializer.data}, status=status.HTTP_200_OK)
+                           "status": "success", 'message': "user sites", "data": serializer.data[0]})
+        return Response({"status": "success", 'message': "user sites", "data": serializer.data[0]}, status=status.HTTP_200_OK)
 
 
 '''
