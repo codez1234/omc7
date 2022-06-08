@@ -435,12 +435,14 @@ class UserReimbursementsView(APIView):
     def get(self, request, format=None):
         dir = "reimbursements"
         request_text_file(dir=dir, user=request.user.id, value=request.data)
-        query_set = TblUserReimbursements.objects.filter(
+        # query_set = TblUserReimbursements.objects.filter(
+        #     user_id=request.user, date__gte=datetime.now()-timedelta(days=7))
+        query_set = TblUserReimbursements.objects.exclude(status="pending").filter(
             user_id=request.user, date__gte=datetime.now()-timedelta(days=7))
         serializer = UserReimbursementsSerializer(query_set, many=True)
         response_text_file(dir=dir, user=request.user.id, value={
-            "status": "success", 'message': serializer.data})
-        return Response({"status": "success", 'message': serializer.data}, status=status.HTTP_200_OK)
+            "status": "success", 'message': "", "data": {"reimbursement": serializer.data}})
+        return Response({"status": "success", 'message': "", "data": {"reimbursement": serializer.data}}, status=status.HTTP_200_OK)
 
 
 class ClaimReimbusmentsView(APIView):

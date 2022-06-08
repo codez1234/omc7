@@ -82,7 +82,7 @@ admin.site.register(Article, ArticleAdmin)
 
 class TblAttendanceAdmin(admin.ModelAdmin):
     list_display = ["fld_ai_id", "fld_user_id", "fld_latitude",
-                    "fld_longitude", "fld_date", "fld_time"]
+                    "fld_longitude", "fld_date", "fld_time", "fld_attendance_status"]
     search_fields = ["fld_user_id__id",
                      "fld_user_id__email", "fld_date", "fld_time"]
     # list_filter = ['status', 'is_ordered']

@@ -1,0 +1,20 @@
+
+2022-06-08 16:36:02.801450
+user id is 2
+{'status': 'success', 'message': [OrderedDict([('claim_id', None), ('visit_id', 'OMCVISIT_2022-06-04_2'), ('distance', 6539.437312267078), ('amount', None), ('status', 'requested'), ('date', '2022-06-04'), ('created_datetime', None)]), OrderedDict([('claim_id', None), ('visit_id', 'OMCVISIT_2022-06-05_2'), ('distance', 11516.66208149838), ('amount', None), ('status', 'pending'), ('date', '2022-06-05'), ('created_datetime', None)])]}
+
+2022-06-08 16:39:44.031531
+user id is 2
+{'status': 'success', 'message': [OrderedDict([('claim_id', None), ('visit_id', 'OMCVISIT_2022-06-04_2'), ('distance', 6539.437312267078), ('amount', None), ('status', 'requested'), ('date', '2022-06-04'), ('created_datetime', None)]), OrderedDict([('claim_id', None), ('visit_id', 'OMCVISIT_2022-06-05_2'), ('distance', 11516.66208149838), ('amount', None), ('status', 'pending'), ('date', '2022-06-05'), ('created_datetime', None)])]}
+
+2022-06-08 16:42:49.012305
+user id is 2
+{'status': 'success', 'message': '', 'data': [OrderedDict([('claim_id', None), ('visit_id', 'OMCVISIT_2022-06-04_2'), ('distance', 6539.437312267078), ('amount', None), ('status', 'requested'), ('date', '2022-06-04'), ('created_datetime', None)]), OrderedDict([('claim_id', None), ('visit_id', 'OMCVISIT_2022-06-05_2'), ('distance', 11516.66208149838), ('amount', None), ('status', 'pending'), ('date', '2022-06-05'), ('created_datetime', None)])]}
+
+2022-06-08 16:44:39.132902
+user id is 2
+{'status': 'success', 'message': '', 'data': {'reimbursment': [OrderedDict([('claim_id', None), ('visit_id', 'OMCVISIT_2022-06-04_2'), ('distance', 6539.437312267078), ('amount', None), ('status', 'requested'), ('date', '2022-06-04'), ('created_datetime', None)]), OrderedDict([('claim_id', None), ('visit_id', 'OMCVISIT_2022-06-05_2'), ('distance', 11516.66208149838), ('amount', None), ('status', 'pending'), ('date', '2022-06-05'), ('created_datetime', None)])]}}
+
+2022-06-08 18:47:42.373105
+user id is 2
+{'status': 'success', 'message': '', 'data': {'reimbursement': [OrderedDict([('claim_id', None), ('visit_id', 'OMCVISIT_2022-06-04_2'), ('distance', 6539.437312267078), ('amount', None), ('status', 'requested'), ('date', '2022-06-04'), ('created_datetime', None)]), OrderedDict([('claim_id', None), ('visit_id', 'OMCVISIT_2022-06-05_2'), ('distance', 11516.66208149838), ('amount', None), ('status', 'requested'), ('date', '2022-06-05'), ('created_datetime', None)])]}}
