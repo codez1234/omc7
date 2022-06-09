@@ -248,11 +248,17 @@ class AttendanceLogView(APIView):
         #                    "status": "success", 'message': "user data", "data": {'visit_id': visit_id, "attendancelog": serializer.data}})
         # return Response({
         #     "status": "success", 'message': "user data", "data": {'visit_id': visit_id, "attendancelog": serializer.data}}, status=status.HTTP_200_OK)
+        try:
+            distance_obj = TblUserReimbursements.objects.filter(
+                user_id=request.user, visit_id=visit_id, date=date).first()
+            total_distance = distance_obj.distance
 
+        except:
+            total_distance = 0.0
         response_text_file(dir=dir, user=request.user.id, value={
-                           "status": "success", 'message': "user data", "data": {'visit_id': visit_id, "attendancelog": serializer_date}})
+                           "status": "success", 'message': "user data", "data": {'visit_id': visit_id, "distance travelled": total_distance, "attendancelog": serializer_date}})
         return Response({
-            "status": "success", 'message': "user data", "data": {'visit_id': visit_id, "attendancelog": serializer_date}}, status=status.HTTP_200_OK)
+            "status": "success", 'message': "user data", "data": {'visit_id': visit_id, "distance travelled": total_distance, "attendancelog": serializer_date}}, status=status.HTTP_200_OK)
 
 
 class UserTblAttendanceView(APIView):

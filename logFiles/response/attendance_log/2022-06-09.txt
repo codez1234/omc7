@@ -14,3 +14,23 @@ user id is 2
 2022-06-09 11:21:08.518805
 user id is 2
 {'status': 'success', 'message': 'user data', 'data': {'visit_id': 'OMCVISIT_2022-06-05_2', 'attendancelog': [{'site_omc_id': 'omc-dbg', 'site_type': 'AB-10', 'site_name': 'jesses and mary academy', 'visit_id': 'OMCVISIT_2022-06-05_2', 'start_latitude': 50.0, 'start_longitude': 50.0, 'end_latitude': 50.0, 'end_longitude': 50.0, 'start_time': '01:20:00', 'end_time': '03:50:00', 'date': '2022-06-05'}, {'site_omc_id': 'omc-train', 'site_type': 'AB-10', 'site_name': 'station', 'visit_id': 'OMCVISIT_2022-06-05_2', 'start_latitude': 10.0, 'start_longitude': 10.0, 'end_latitude': 10.0, 'end_longitude': 10.0, 'start_time': '01:50:00', 'end_time': '02:50:00', 'date': '2022-06-05'}]}}
+
+2022-06-09 11:33:24.110308
+user id is 2
+{'status': 'success', 'message': 'user data', 'data': {'visit_id': 'OMCVISIT_2022-06-05_2', 'distance travelled': 11516.66208149838, 'attendancelog': [{'site_omc_id': 'omc-dbg', 'site_type': 'AB-10', 'site_name': 'jesses and mary academy', 'visit_id': 'OMCVISIT_2022-06-05_2', 'start_latitude': 50.0, 'start_longitude': 50.0, 'end_latitude': 50.0, 'end_longitude': 50.0, 'start_time': '01:20:00', 'end_time': '03:50:00', 'date': '2022-06-05'}, {'site_omc_id': 'omc-train', 'site_type': 'AB-10', 'site_name': 'station', 'visit_id': 'OMCVISIT_2022-06-05_2', 'start_latitude': 10.0, 'start_longitude': 10.0, 'end_latitude': 10.0, 'end_longitude': 10.0, 'start_time': '01:50:00', 'end_time': '02:50:00', 'date': '2022-06-05'}]}}
+
+2022-06-09 11:33:57.599281
+user id is 2
+{'status': 'success', 'message': 'user data', 'data': {'visit_id': 'OMCVISIT_2022-06-05_2', 'distance travelled': 11516.66208149838, 'attendancelog': [{'site_omc_id': 'omc-dbg', 'site_type': 'AB-10', 'site_name': 'jesses and mary academy', 'visit_id': 'OMCVISIT_2022-06-05_2', 'start_latitude': 50.0, 'start_longitude': 50.0, 'end_latitude': 50.0, 'end_longitude': 50.0, 'start_time': '01:20:00', 'end_time': '03:50:00', 'date': '2022-06-05'}, {'site_omc_id': 'omc-train', 'site_type': 'AB-10', 'site_name': 'station', 'visit_id': 'OMCVISIT_2022-06-05_2', 'start_latitude': 10.0, 'start_longitude': 10.0, 'end_latitude': 10.0, 'end_longitude': 10.0, 'start_time': '01:50:00', 'end_time': '02:50:00', 'date': '2022-06-05'}]}}
+
+2022-06-09 11:36:27.739710
+user id is 2
+{'status': 'success', 'message': 'user data', 'data': {'visit_id': 'OMCVISIT_2022-06-05_2', 'distance travelled': 11516.66208149838, 'attendancelog': [{'site_omc_id': 'omc-dbg', 'site_type': 'AB-10', 'site_name': 'jesses and mary academy', 'visit_id': 'OMCVISIT_2022-06-05_2', 'start_latitude': 50.0, 'start_longitude': 50.0, 'end_latitude': 50.0, 'end_longitude': 50.0, 'start_time': '01:20:00', 'end_time': '03:50:00', 'date': '2022-06-05'}, {'site_omc_id': 'omc-train', 'site_type': 'AB-10', 'site_name': 'station', 'visit_id': 'OMCVISIT_2022-06-05_2', 'start_latitude': 10.0, 'start_longitude': 10.0, 'end_latitude': 10.0, 'end_longitude': 10.0, 'start_time': '01:50:00', 'end_time': '02:50:00', 'date': '2022-06-05'}]}}
+
+2022-06-09 11:36:34.405335
+user id is 2
+{'status': 'success', 'message': 'user data', 'data': {'visit_id': 'OMCVISIT_2022-06-04_2', 'distance travelled': 6539.437312267078, 'attendancelog': [{'site_omc_id': 'omc-train', 'site_type': 'AB-10', 'site_name': 'station', 'visit_id': 'OMCVISIT_2022-06-04_2', 'start_latitude': 10.0, 'start_longitude': 10.0, 'end_latitude': 10.0, 'end_longitude': 10.0, 'start_time': '02:20:00', 'end_time': '02:20:00', 'date': '2022-06-04'}, {'site_omc_id': 'omc-dbg', 'site_type': 'AB-10', 'site_name': 'jesses and mary academy', 'visit_id': 'OMCVISIT_2022-06-04_2', 'start_latitude': 50.0, 'start_longitude': 50.0, 'end_latitude': 50.0, 'end_longitude': 50.0, 'start_time': '03:20:00', 'end_time': '04:20:00', 'date': '2022-06-04'}]}}
+
+2022-06-09 11:36:41.734498
+user id is 2
+{'status': 'success', 'message': 'user data', 'data': {'visit_id': 'OMCVISIT_2022-06-09_2', 'distance travelled': 0.0, 'attendancelog': []}}
