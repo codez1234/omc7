@@ -30,7 +30,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework_simplejwt',
     'account',
-    "database"
+    "database",
+    "notifications"
 ]
 
 MIDDLEWARE = [
