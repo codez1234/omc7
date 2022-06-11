@@ -284,13 +284,16 @@ class AttendanceLogView(APIView):
                 user_id=request.user, visit_id=visit_id, date=date).first()
             # round(float_num, num_of_decimals)
             total_distance = round(distance_obj.distance, 1)
+            reimbursement_status = distance_obj.status
 
         except:
             total_distance = 0.0
+            reimbursement_status = "not_available"
+
         response_text_file(dir=dir, user=request.user.id, value={
-                           "status": "success", 'message': "user data", "data": {'visit_id': visit_id, "distance_travelled": total_distance, "attendancelog": serializer_date}})
+                           "status": "success", 'message': "user data", "data": {'visit_id': visit_id, "distance_travelled": total_distance, "reimbursement_status": reimbursement_status, "attendancelog": serializer_date}})
         return Response({
-            "status": "success", 'message': "user data", "data": {'visit_id': visit_id, "distance_travelled": total_distance, "attendancelog": serializer_date}}, status=status.HTTP_200_OK)
+            "status": "success", 'message': "user data", "data": {'visit_id': visit_id, "distance_travelled": total_distance, "reimbursement_status": reimbursement_status, "attendancelog": serializer_date}}, status=status.HTTP_200_OK)
 
 
 class UserTblAttendanceView(APIView):

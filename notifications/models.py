@@ -27,9 +27,11 @@ class TblUserFirebase(models.Model):
 
 class TblNotificationConfig(models.Model):
     NOTIFICATIONS_TYPE_CHOICE = (
-        ('check_in', 'check_in'),
+        ('forgets to check-in', 'forgets to check-in'),
         ('offline', 'offline'),
-        ('check_out', 'check_out'),
+        ('outside of geolocation bound', 'outside of geolocation bound'),
+        ('disable tracking', 'disable tracking'),
+        ('changes datetime', 'changes datetime'),
     )
     id = models.AutoField(primary_key=True, db_column="fld_ai_id")
     # user_id = models.ForeignKey(

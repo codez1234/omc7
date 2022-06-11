@@ -14,3 +14,15 @@ user id is 2
 2022-06-11 11:39:39.408534
 user id is 2
 {'status': 'success', 'message': '', 'data': {'reimbursement': [{'claim_id': None, 'visit_id': 'OMCVISIT_2022-06-04_2', 'distance': 6539.4, 'amount': None, 'status': 'Requested', 'date': '2022-06-04'}, {'claim_id': None, 'visit_id': 'OMCVISIT_2022-06-05_2', 'distance': 11516.7, 'amount': None, 'status': 'Requested', 'date': '2022-06-05'}]}}
+
+2022-06-11 15:47:45.072647
+user id is 2
+{'status': 'success', 'message': '', 'data': {'reimbursement': [{'claim_id': None, 'visit_id': 'OMCVISIT_2022-06-04_2', 'distance': 6539.4, 'amount': None, 'status': 'Requested', 'date': '2022-06-04'}, {'claim_id': None, 'visit_id': 'OMCVISIT_2022-06-05_2', 'distance': 11516.7, 'amount': None, 'status': 'Requested', 'date': '2022-06-05'}]}}
+
+2022-06-11 15:48:04.450054
+user id is 2
+{'status': 'success', 'message': '', 'data': {'reimbursement': [{'claim_id': None, 'visit_id': 'OMCVISIT_2022-06-04_2', 'distance': 6539.4, 'amount': None, 'status': 'Requested', 'date': '2022-06-04'}, {'claim_id': None, 'visit_id': 'OMCVISIT_2022-06-05_2', 'distance': 11516.7, 'amount': None, 'status': 'Requested', 'date': '2022-06-05'}]}}
+
+2022-06-11 16:13:38.393439
+user id is 2
+{'status': 'success', 'message': '', 'data': {'reimbursement': [{'claim_id': None, 'visit_id': 'OMCVISIT_2022-06-04_2', 'distance': 6539.4, 'amount': None, 'status': 'Requested', 'date': '2022-06-04'}, {'claim_id': None, 'visit_id': 'OMCVISIT_2022-06-05_2', 'distance': 11516.7, 'amount': None, 'status': 'Requested', 'date': '2022-06-05'}]}}
