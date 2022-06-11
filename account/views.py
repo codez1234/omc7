@@ -160,9 +160,35 @@ class UserSitesView(APIView):
             user_id=id, assigned_date=date_now())
         serializer = TblUserSitesSerializer(sites, many=True)
 
+        '''
+        try:
+            val = serializer.data[0]
+            # response_text_file(dir=dir, user=id, value={
+            #     "status": "success", 'message': "user sites", "data": val})
+            # return Response({"status": "success", 'message': "user sites", "data": val}, status=status.HTTP_200_OK)
+
+        except:
+            val = messages.get("site_not_assined_yet")
+            # response_text_file(dir=dir, user=id, value={"status": "error", 'message': val})
+            # return Response({"status": "error", 'message': val}, status=status.HTTP_404_NOT_FOUND)
+
         response_text_file(dir=dir, user=id, value={
-                           "status": "success", 'message': "user sites", "data": serializer.data[0]})
-        return Response({"status": "success", 'message': "user sites", "data": serializer.data[0]}, status=status.HTTP_200_OK)
+                           "status": "success", 'message': "user sites", "data": val})
+        return Response({"status": "success", 'message': "user sites", "data": val}, status=status.HTTP_200_OK)
+        
+        '''
+
+        try:
+            val = serializer.data[0]
+            response_text_file(dir=dir, user=id, value={
+                "status": "success", 'message': "user sites", "data": val})
+            return Response({"status": "success", 'message': "user sites", "data": val}, status=status.HTTP_200_OK)
+
+        except:
+            val = messages.get("site_not_assined_yet")
+            response_text_file(dir=dir, user=id, value={
+                               "status": "error", 'message': val})
+            return Response({"status": "error", 'message': val}, status=status.HTTP_404_NOT_FOUND)
 
 
 '''
@@ -251,14 +277,15 @@ class AttendanceLogView(APIView):
         try:
             distance_obj = TblUserReimbursements.objects.filter(
                 user_id=request.user, visit_id=visit_id, date=date).first()
-            total_distance = distance_obj.distance
+            # round(float_num, num_of_decimals)
+            total_distance = round(distance_obj.distance, 1)
 
         except:
             total_distance = 0.0
         response_text_file(dir=dir, user=request.user.id, value={
-                           "status": "success", 'message': "user data", "data": {'visit_id': visit_id, "distance travelled": total_distance, "attendancelog": serializer_date}})
+                           "status": "success", 'message': "user data", "data": {'visit_id': visit_id, "distance_travelled": total_distance, "attendancelog": serializer_date}})
         return Response({
-            "status": "success", 'message': "user data", "data": {'visit_id': visit_id, "distance travelled": total_distance, "attendancelog": serializer_date}}, status=status.HTTP_200_OK)
+            "status": "success", 'message': "user data", "data": {'visit_id': visit_id, "distance_travelled": total_distance, "attendancelog": serializer_date}}, status=status.HTTP_200_OK)
 
 
 class UserTblAttendanceView(APIView):

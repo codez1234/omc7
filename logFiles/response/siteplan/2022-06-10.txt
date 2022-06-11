@@ -1,0 +1,32 @@
+
+2022-06-10 19:18:29.446327
+user id is 2
+{'status': 'success', 'message': 'user sites', 'data': 'please contact the administrator'}
+
+2022-06-10 22:16:28.357231
+user id is 2
+{'status': 'success', 'message': 'user sites', 'data': 'please contact the administrator'}
+
+2022-06-10 22:17:01.911695
+user id is 2
+{'status': 'success', 'message': 'user sites', 'data': OrderedDict([('sites', [OrderedDict([('site_omc_id', 'omc-dbg'), ('site_type', 'AB-10'), ('site_name', 'jesses and mary academy'), ('state', 'bihar'), ('district', 'darbhanga'), ('latitude', '50'), ('longitude', '50')]), OrderedDict([('site_omc_id', 'omc-tower'), ('site_type', 'AB-10'), ('site_name', 'darbhanga tower'), ('state', 'bihar'), ('district', 'darbhanga'), ('latitude', '20'), ('longitude', '20')]), OrderedDict([('site_omc_id', 'omc-train'), ('site_type', 'AB-10'), ('site_name', 'station'), ('state', 'bihar'), ('district', 'darbhanga'), ('latitude', '10'), ('longitude', '10')])]), ('assigned_date', '2022-06-10')])}
+
+2022-06-10 22:19:24.418247
+user id is 2
+{'status': 'success', 'message': 'user sites', 'data': 'please contact the administrator'}
+
+2022-06-10 22:23:16.988904
+user id is 2
+{'status': 'success', 'message': 'user sites', 'data': 'please contact the administrator'}
+
+2022-06-10 22:29:04.547940
+user id is 2
+{'status': 'success', 'message': 'user sites', 'data': 'please contact the administrator'}
+
+2022-06-10 22:33:18.511615
+user id is 2
+{'status': 'error', 'message': 'please contact the administrator'}
+
+2022-06-10 22:33:20.193541
+user id is 2
+{'status': 'error', 'message': 'please contact the administrator'}

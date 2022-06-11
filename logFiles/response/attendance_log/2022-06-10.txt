@@ -1,0 +1,4 @@
+
+2022-06-10 22:22:26.425588
+user id is 2
+{'status': 'success', 'message': 'user data', 'data': {'visit_id': 'OMCVISIT_2022-06-10_2', 'distance_travelled': 0.0, 'attendancelog': []}}
