@@ -106,9 +106,14 @@ class UserProfileView(APIView):
         print(request.user.id)
         request_text_file(user=request.user.id, value=request.data, dir=dir)
         serializer = UserProfileSerializer(request.user)
+        # response_text_file(user=request.user.id, value={
+        #                    "status": "success", 'message': "user data", "data": serializer.data}, dir=dir)
+        # return Response({"status": "success", 'message': "user data", "data": serializer.data}, status=status.HTTP_200_OK)
+        val = serializer.data
+        val["omc_id"] = request.user.id
         response_text_file(user=request.user.id, value={
-                           "status": "success", 'message': "user data", "data": serializer.data}, dir=dir)
-        return Response({"status": "success", 'message': "user data", "data": serializer.data}, status=status.HTTP_200_OK)
+                           "status": "success", 'message': "user data", "data": val}, dir=dir)
+        return Response({"status": "success", 'message': "user data", "data": val}, status=status.HTTP_200_OK)
 
 
 class UserChangePasswordView(APIView):
@@ -473,9 +478,37 @@ class UserReimbursementsView(APIView):
         query_set = TblUserReimbursements.objects.exclude(status="pending").filter(
             user_id=request.user, date__gte=datetime.now()-timedelta(days=7))
         serializer = UserReimbursementsSerializer(query_set, many=True)
+        # response_text_file(dir=dir, user=request.user.id, value={
+        #     "status": "success", 'message': "", "data": {"reimbursement": serializer.data}})
+        # return Response({"status": "success", 'message': "", "data": {"reimbursement": serializer.data}}, status=status.HTTP_200_OK)
+        serializer_date = []
+        # print(serializer.data)
+        '''
+        {
+                "claim_id": null,
+                "visit_id": "OMCVISIT_2022-06-04_2",
+                "distance": 6539.437312267078,
+                "amount": null,
+                "status": "requested",
+                "date": "2022-06-04",
+                "created_datetime": null
+            }
+        '''
+        for i in serializer.data:
+            dict_data = {
+
+                "claim_id": i.get("claim_id"),
+                "visit_id": i.get("visit_id"),
+                "distance": round(i.get("distance"), 1),
+                "amount": i.get("amount"),
+                "status": i.get("status").capitalize(),
+                "date": i.get("date"),
+            }
+            serializer_date.append(dict_data)
+
         response_text_file(dir=dir, user=request.user.id, value={
-            "status": "success", 'message': "", "data": {"reimbursement": serializer.data}})
-        return Response({"status": "success", 'message': "", "data": {"reimbursement": serializer.data}}, status=status.HTTP_200_OK)
+            "status": "success", 'message': "", "data": {"reimbursement": serializer_date}})
+        return Response({"status": "success", 'message': "", "data": {"reimbursement": serializer_date}}, status=status.HTTP_200_OK)
 
 
 class ClaimReimbusmentsView(APIView):

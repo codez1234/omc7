@@ -1,0 +1,12 @@
+
+2022-06-11 11:40:51.778727
+user id is 2
+{'status': 'success', 'message': 'user data', 'data': {'id': 2, 'email': 'skmd@gmail.com', 'mobile': '8434939102', 'first_name': 'shubham', 'last_name': 'kumar', 'address': 'rahamgang', 'check_in_time': '10:00:00', 'check_out_time': '18:00:00', 'last_login': None, 'created_datetime': '2022-06-05T21:01:32'}}
+
+2022-06-11 11:42:38.880508
+user id is 2
+{'status': 'success', 'message': 'user data', 'data': {'email': 'skmd@gmail.com', 'mobile': '8434939102', 'first_name': 'shubham', 'last_name': 'kumar', 'address': 'rahamgang', 'check_in_time': '10:00:00', 'check_out_time': '18:00:00', 'last_login': None, 'created_datetime': '2022-06-05T21:01:32', 'omc_id': 2}}
+
+2022-06-11 11:44:20.560708
+user id is 2
+{'status': 'success', 'message': 'user data', 'data': {'email': 'skmd@gmail.com', 'mobile': '8434939102', 'first_name': 'shubham', 'last_name': 'kumar', 'address': 'rahamgang', 'check_in_time': '10:00:00', 'check_out_time': '18:00:00', 'created_datetime': '2022-06-05T21:01:32', 'omc_id': 2}}

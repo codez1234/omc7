@@ -17,7 +17,7 @@ class UserProfileSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         # fields = "__all__"
-        exclude = ("id", 'password', "is_active", "is_delete",
+        exclude = ("id", 'password', "last_login", "is_active", "is_delete",
                    "datetime_timestamp", "is_admin", "user_level")
 
 
